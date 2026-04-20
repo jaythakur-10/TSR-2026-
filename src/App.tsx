@@ -29,7 +29,8 @@ import { GoogleGenAI } from "@google/genai";
 import { cn } from './lib/utils';
 
 // --- Gemini Service ---
-const genAI = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const apiKey = process.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY;
+const genAI = new GoogleGenAI({ apiKey: apiKey as string });
 
 const analyzeImage = async (base64Image: string) => {
   try {
