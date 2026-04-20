@@ -1,0 +1,8 @@
+{
+  "name": "TSR AI Vision",
+  "description": "Next-gen Traffic Sign Recognition website powered by Deep Learning, featuring real-time detection and classification with a modern dark tech aesthetic.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": []
+}
